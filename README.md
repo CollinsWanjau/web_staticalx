@@ -149,6 +149,74 @@ the two.
 * As with the subject, spaces must be encoded using `%20`, and line breaks msut be encoded 
 using `%0A`.
 
-`
+```
 <a href="mailto:tripperskripper@gmail.com?subject=Reaching%20Out&body=How%20are%20you">
-`
+```
+## Opening Links in a New Window
+
+`<a href="http:http://localhost:5555/styles-conference" target="_blank">Style</a>`
+
+## Linking to Parts of the Same Page
+
+<body id="top">
+<a href="#top"></a>
+</body>
+
+# Getting to know CSS
+
+## Calculating the Speficity
+
+* The type selector has the lowest specificity weight and holds a point value of `0-0-1`.
+
+* The class selector has a medium specificity weight and holds a point value of `0-1-0`.
+
+* the ID selector has a high specificity weight and holds a point value of 1-0-0.
+
+* The first column counts ID selectors, the second column counts class selectors, and the third column counts type selectors.
+
+## Combining Selectors
+
+<b>HTML</b>
+```
+<div class="hotdog">
+  <p>...</p>
+  <p>...</p>
+  <p class="mustard">...</p>
+</div>
+```
+
+<b>CSS</b>
+```
+.hotdog p {
+  background: brown;
+}
+.hotdog p.mustard {
+  background: yellow;
+}
+```
+
+## Layering Styles with Multiple Classes
+
+* One way to keep the specificity weights of our selectors low is to be modular as possible,
+sharing similar styles from element to element.
+
+<b>HTML</b>
+```
+<a class="btn btn-danger">...</a>
+<a class="btn btn-success">...</a>
+```
+
+<b>CSS</b>
+```
+.btn {
+  font-size: 16px;
+}
+
+.btn-danger {
+  background: red;
+}
+
+.btn-sucess {
+  background: green;
+}
+```
