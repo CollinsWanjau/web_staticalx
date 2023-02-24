@@ -1,0 +1,14 @@
+div {
+  border-bottom: 4mm ridge rgba(211, 220, 50, .6);
+  border-bottom: thick double #32a1ce;
+  border-bottom: 1rem solid;
+  border-bottom: dashed red;
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 00.5rem;
+
+}
