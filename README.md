@@ -220,3 +220,198 @@ sharing similar styles from element to element.
   background: green;
 }
 ```
+
+## border-bottom
+
+* The `border-bottom` shorthand CSS property sets an element's bottom border
+
+* It sets the values of `border-bottom-width`, `border-bottom-style` and
+`border-bottom-color`
+
+### Syntax
+
+border-bottom: 1px;
+border-bottom: 2px dotted;
+border-bottom: medium dashed blue;
+
+##  Border
+### Syntax
+```
+/* style */
+
+border: solid;
+
+/* width | style */
+
+border: 2px dotted;
+
+/* style | color */
+
+border: outset #f33;
+
+/* width | style | color */
+
+border: medium dashed green;
+```
+
+#### Values
+
+* `line-width`
+-> Sets the thickness of the border `border-width`.
+
+* `line-style`
+-> Sets the style of the border.Defaults to none `border-style`.
+
+* `color`
+-> Sets the color of the border.Defaults to currentcolor `<border-color>`
+
+## Background
+
+* `Background` shorthand sets all background style properties at once, such
+as color, image, origin and size, or repeate method
+
+### Constituent Properties
+
+1. background-attachment
+
+2. background-color
+
+3. background-image
+
+4. background-origin
+
+5. background-position
+
+6. background-repeat
+
+7. background-size
+
+### Syntax 
+
+```
+/* Using a <background-color> */
+background: green;
+
+/* Using a <bg-image> and <repeat-style> */
+background: url("test.jpg") repeat-y;
+
+/* Using a <box> and <background-color> */
+background: border-box red;
+
+/* A single image, centered and scaled */
+background: no-repeat center/80% url()
+```
+
+## Box Sizing
+
+* The `box-sizing` sets how the totsl width and height of an element is
+calculated.
+
+* Note that it often useful to set `box-sizing` to `border-box` to lay out
+elements.This makes dealing with the sizes of elements much easier, and generally
+eleiminates a number of pitfalls you can stumble on while laying out
+your content.
+
+* On the other hand, when using `position: relative` or `position: absolute`,
+use of `box-sizing: content-box` allows the positioning values to be relative
+to the content, and independent of changes to border and padding sizes,
+which is sometimes desirable.
+
+### Values
+
+* `content-box`
+-> This is the initial and default value as specified by the CSS standard.The
+`width` and `height` properties include the content, but does not include
+the padding, border or margin.
+
+* The dimensions of the element are calcuted as: width = width of the content,
+and height = height of the content.(Borders and padding not included).
+
+* `border-box`
+-> The width and height properties include the content, padding and border,
+but do not include margin.
+
+* `.box {width: 350px; border: 10px solid black;}` renders a box that is 350px
+wide, with the area for content being 330px wide.The content can't be negative
+and is floored to 0, making it impossible to use `border-box` to make element
+dissappear.
+
+* width = border + padding + width of the content
+
+* Height = border + padding + height of the content
+
+## Flex
+
+* The `flex` sets how a flex item will grow or shrink to fit the space available
+in it's flex container.
+
+#### Constituent properties
+
+* This property is a shorthand for the following:
+
+* `flex-grow`, `flex-shrink`, `flex-basis`
+
+### Syntax
+
+```
+/* keyword values */
+flex: auto
+flex: initial
+flex: none
+
+/* One value, unitless number: flex-grow 
+flex-basis is then equal to 0. */
+flex: 2;
+
+/* One value, width/height: flex-basis */
+flex: 10em;
+flex: 30%;
+flex: min-content
+
+/* Two values: flex-grow | flex-basis */
+flex: 1  30px;
+
+/* Two values: flex-grow | flex-shrink */
+flex: 2 2;
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+
+```
+
+## Margin
+
+* The `margin` CSS sets the margin area on all four sides of an element.
+
+### Syntax
+
+```
+/* Apply to all four sides
+
+margin: 1em;
+margin: -3px;
+
+/* top and bottom | left and right */
+margin: 5% auto;
+-> sets a margin of 5% on all four sides of an element and centers it
+horizontally within its parent container.
+
+* The "auto" value for the horizontal margin (left and right) instructs
+the broswer to automatically calculate and distribute the remaining space
+evenly on both sides, effectively centering the element horizontally
+within it's container.
+
+* The vertical margin (top and bottom) will be 5% of the element's height.
+
+/* top | left and right | bottom */
+margin: 1em auto 2em;
+
+/* top | right | bottom | left */
+margin: 2px 1em 0 auto;
+```
+
+
+## Position: Relative
+
+* Relative allows you to move an element relative to its original position
+within its container, without affecting the position of other elements
+around it.
