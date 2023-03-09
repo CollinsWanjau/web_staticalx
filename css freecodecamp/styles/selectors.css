@@ -1,0 +1,31 @@
+html { 
+  font-size:15px;
+}
+body {
+/*   border: 3px solid black; */
+}
+
+
+h1 h2{
+  color: blue;
+}
+
+p {
+  color:blueviolet;
+}
+
+p {
+  color: red;
+}
+.gray {
+  color: gray;
+}
+
+#second {
+  font-style: italic;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+}
