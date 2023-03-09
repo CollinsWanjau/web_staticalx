@@ -1,0 +1,23 @@
+.relative1 {
+  position: relative;
+  border: 5px solid rgba(0, 136, 255, 0.578);
+  /* border-width: 20px; */
+  /* padding: 50px; */
+}
+
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: aliceblue;
+  width: 500px;
+}
+
+.fixed {
+  position: fixed;
+  border: 5px solid rgba(255, 68, 0, 0.723);
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: aliceblue;
+}

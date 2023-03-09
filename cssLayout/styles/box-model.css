@@ -1,0 +1,16 @@
+.simple {
+  width: 500px;
+  background-color: aqua;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.fancy {
+  width: 500px;
+  background-color: blueviolet;
+  padding: 50px;
+  border-width: 10px;
+  border: dotted;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
