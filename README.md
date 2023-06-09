@@ -340,6 +340,19 @@ dissappear.
 
 * Height = border + padding + height of the content
 
+## Box-Model
+
+* When you set the width of an element, the element can actually appear bigger
+than what you set; the elements border and padding will strecth out the
+element beyond the specified width
+
+## Box-sizing
+
+* A new CSS property called `box-sizing` was created.When you set
+`box-sizing: border-box;` on an element, the padding and border of that
+element no longer increase it's width.
+
+
 ## Flex
 
 * The `flex` sets how a flex item will grow or shrink to fit the space available
@@ -409,9 +422,22 @@ margin: 1em auto 2em;
 margin: 2px 1em 0 auto;
 ```
 
+## Position
 
-## Position: Relative
+### Static
 
-* Relative allows you to move an element relative to its original position
-within its container, without affecting the position of other elements
-around it.
+```
+.static {
+    position: static
+}
+```
+
+* `Static` is the default value. An element with `position: static` is not
+positioned in any special way.
+
+### Relative
+
+### Absolute
+
+* `Absolute` behaves like `fixed` except relative to the nearest positioned
+ancestor instead of relative to the viewport.
